@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpaceX Exploration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="logo">🚀 SpaceX Exploration</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="missions.html">Missions</a></li>
+      <li><a href="technologies.html">Technology</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- GALLERY -->
+  <section class="section dark" id="gallery">
+    <h2>Discover Space</h2>
+    <div class="gallery">
+      <img src="https://www.starlink.com/public-files/home_a_feature1_d.webp" alt="Starlink">
+      <img src="https://www.spacex.com/assets/images/vehicles/dragon/dragon_feature.jpg">
+      <img src="https://sxcontent9668.azureedge.us/cms-assets/assets/Vandy_desktop1_686164ccc7.jpg" alt="Starship Launch">
+      <img src="https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <img src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <img src="https://images.unsplash.com/photo-1634175735590-b2ed7b02d143?q=80&w=1460&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 SpaceX Exploration — Student Project</p>
+  </footer>
+
+  <script>
+    // Reveal sections on scroll
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+    sections.forEach(sec => observer.observe(sec));
+  </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="SpaceX" content="Stay updated with the latest SpaceX news, missions, rockets, and innovations in space exploration and technology." />
+  <title>SpaceX Exploration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="logo">🚀 SpaceX Exploration</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="missions.html">Missions</a></li>
+      <li><a href="technologies.html">Technology</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN BANNER -->
+  <section class="banner" id="banner">
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <h1>Exploring the Stars</h1>
+      <p>Embark on humanity’s greatest adventure — from Earth to Mars and beyond.</p>
+      <button class="btn">Discover More</button>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 SpaceX Exploration — Student Project</p>
+  </footer>
+
+  <script>
+    // Reveal sections on scroll
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+    sections.forEach(sec => observer.observe(sec));
+  </script>
+</body>
+</html>
