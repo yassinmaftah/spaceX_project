@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="SpaceX" content="Stay updated with the latest SpaceX news, missions, rockets, and innovations in space exploration and technology." />
+  <title>SpaceX Exploration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="logo">🚀 SpaceX Exploration</div>
+    <ul class="nav-links">
+      <li><a href="index.html"><span style="color: #00ff15;">Home</span></a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="missions.html">Missions</a></li>
+      <li><a href="technologies.html">Technology</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="faq.html"><span style="color: #00ff15;">FAQ</span></a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN BANNER -->
+  <section class="banner" id="banner">
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <h1>Exploring the Stars</h1>
+      <p>Embark on humanity’s greatest adventure — from Earth to Mars and beyond.</p>
+      <a  href="technologies.html" class="btn">Discover More</a>
+    </div>
+  </section>
+
+
+
+    <!-- FAQ SECTION -->
+  <section class="section faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>What is SpaceX?</h3>
+      <p>SpaceX is a private aerospace company founded by Elon Musk, focused on reducing space transportation costs and enabling Mars colonization.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>When was SpaceX founded?</h3>
+      <p>SpaceX was founded in 2002 with the goal of revolutionizing space technology.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What are Falcon rockets?</h3>
+      <p>Falcon rockets are a family of reusable launch vehicles developed by SpaceX for satellite launches and crew missions.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Where is SpaceX headquarters?</h3>
+      <p>SpaceX’s headquarters is located in Hawthorne, California, United States.</p>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+        <p>© 2025 SpaceX. All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="missions.html">Missions</a></li>
+          <li><a href="technologies.html">Technology</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html"><span style="color: #00ff15;">FAQ</span></a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+  </footer>
+
+
+  <script>
+    // Reveal sections on scroll
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+    sections.forEach(sec => observer.observe(sec));
+  </script>
+</body>
+</html>
