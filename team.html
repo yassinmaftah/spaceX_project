@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpaceX Exploration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="logo">🚀 SpaceX Exploration</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="team.html"><span style="color: #00ff15;">Team</span></a></li>
+      <li><a href="missions.html">Missions</a></li>
+      <li><a href="technologies.html">Technology</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- MISSIONS -->
+  <section class="section dark" id="missions">
+    <h2>Our Team</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://media.wired.com/photos/6696e4a11f1e05dd7d416d82/3:2/w_2560%2Cc_limit/Elon-Musk-SpaceX-X-Move-Texas-Business-2158244111.jpg" alt="Elon Musk">
+        <h3>Elon Musk</h3>
+        <p>Elon Musk is a visionary entrepreneur known for creating and leading several groundbreaking companies. As the CEO of SpaceX and Tesla, he aims to revolutionize space travel and sustainable energy. His bold ideas, risk-taking attitude, and relentless pursuit of innovation have made him one of the most influential figures of modern technology.</p>
+      </div>
+      <div class="card">
+        <img src="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcRtnWw3RbFv3k9VzJGu4XMPHwe50mgriGQfF91qLMB0Mu6kRszXRG2dIajzvH2Fe-fk" alt="Gwynne Shotwell">
+        <h3>Gwynne Shotwell</h3>
+        <p>Gwynne Shotwell serves as the President and Chief Operating Officer of SpaceX, where she oversees daily operations and manages customer relations. Her leadership has been crucial in achieving successful rocket launches and landing missions. Shotwell is widely respected for her technical expertise, strategic mindset, and ability to guide complex aerospace projects.</p>
+      </div>
+      <div class="card">
+        <img src="https://image.cnbcfm.com/api/v1/image/103803165-75A-SpaceX-Bret-Johnsen.jpg?v=1529472195&w=1920&h=1080" alt="Bret Johnsen">
+        <h3>Bret Johnsen</h3>
+        <p>Bret Johnsen is the Chief Financial Officer at SpaceX, responsible for managing financial strategy, risk, and growth. With extensive experience in finance and corporate management, he ensures that SpaceX remains efficient and profitable. His disciplined approach and financial insight help the company sustain ambitious missions and continue expanding into global markets.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.ft.com/v3/image/raw/ftcms%3Aa3f95d72-9c89-11e8-88de-49c908b1f264?source=next-article&fit=scale-down&quality=highest&width=700&dpr=2" alt="Antonio Gracias">
+        <h3>Antonio Gracias</h3>
+        <p>Antonio Gracias is a key investor and longtime advisor to Elon Musk, having played an essential role in the success of Tesla and SpaceX. As a board member and entrepreneur, he brings valuable financial and strategic expertise. Gracias’s forward-thinking investments continue to shape the future of technology, energy, and transportation industries.</p>
+      </div>
+      <div class="card">
+        <img src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_540,q_100,w_1080/v1/gcs/platform-data-startupgrind/blog/1-hNleSvvbKdqBJVEUJujJ8A_u6j9xvG.jpeg" alt="Donald Harrison">
+        <h3>Donald Harrison</h3>
+        <p>Donald Harrison is a business leader and investor recognized for his involvement with innovative companies. He has contributed to several technology ventures, offering guidance and support in their growth stages. His analytical skills, commitment to progress, and understanding of market trends have helped emerging firms strengthen their foundations and reach success.</p>
+      </div>
+      <div class="card">
+        <img src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTKUAv0n7A1QP5IenA_cvSbNTnbo4tWtXwNEFER2GQDHm7wl21DJe0bx8diyZ1o5ERt" alt="Luke Nosek">
+        <h3>Luke Nosek is one of the original co-founders of PayPal and an early investor in SpaceX. His entrepreneurial vision and early recognition of groundbreaking technology made him a significant figure in Silicon Valley. Nosek continues to support futuristic projects, focusing on science-driven innovation and long-term progress for humanity’s technological advancement.</h3>
+        <p></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+        <p>© 2025 SpaceX. All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html"><span style="color: #00ff15;">Team</span></a></li>
+            <li><a href="missions.html">Missions</a></li>
+            <li><a href="technologies.html">Technology</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+  </footer>
+
+  <script>
+    // Reveal sections on scroll
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+    sections.forEach(sec => observer.observe(sec));
+  </script>
+</body>
+</html>

@@ -261,6 +261,17 @@ footer {
     border-radius: 0;
   }
 
+  .footer-links 
+  { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    position: static;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+  }
+
 
   .banner-content h1 { font-size: 2.2rem; }
   .section { padding: 70px 15px; }
