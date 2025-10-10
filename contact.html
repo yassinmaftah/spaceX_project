@@ -16,34 +16,45 @@
       <li><a href="missions.html">Missions</a></li>
       <li><a href="technologies.html">Technology</a></li>
       <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html"><span style="color: #00ff15;">Contact</span></a></li>
     </ul>
   </nav>
 
   <!-- CONTACT SECTION -->
     <section class="section" id="contact">
-    <h2>Contact Us</h2>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your email" required>
+      <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
 
-        <label for="number">Number:</label>
-        <input type="number" id="number" name="number" placeholder="Your number" required>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Write your message" required></textarea>
-        
-        <button type="submit" class="btn">Send Message</button>
-    </form>
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number" placeholder="Your number" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+            
+            <button onclick="alert('The operation was successful.')" type="submit" class="btn">Send Message</button>
+        </form>
     </section>
 
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 SpaceX Exploration — Student Project</p>
+    <div class="footer-left">
+        <p>© 2025 SpaceX. All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="missions.html">Missions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
   </footer>
 
   <script>
